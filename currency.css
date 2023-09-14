@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bricolage+Grotesque:opsz,wght@10..48,500&family=Poppins:wght@400;500&display=swap');
+
+body{
+    margin: 0;
+    height: 100vh;
+    background:url('bg1.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.outer{
+    border: 9px solid black;
+    /* backdrop-filter: blur(50px); */
+    background-color: #20b2ebc2;
+    border-radius: 125px;
+    display: grid;
+    grid-template-columns: 40vh 40vh;
+    grid-template-rows: 20vh 20vh 20vh;
+    grid-template-areas: "t t"
+    "m1 m2"
+    "b b";
+}
+.section1{
+    text-shadow: -3px 1px 1px #000;
+    grid-area: t;
+    display: flex;
+    align-items:flex-end;
+    justify-content: center;
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.8rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: rgb(34, 4, 143);
+}
+.section2{
+    grid-area: m1;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.section3{
+    grid-area: m2;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.section4{
+    grid-area: b;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+button{
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+
+    background: #fff;
+    border: none;
+    padding: 10px 20px;
+    display: inline-block;
+    font-size: 15px;
+    width: 120px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transform: skew(-21deg);
+  }
+  
+  span {
+    display: inline-block;
+    transform: skew(21deg);
+  }
+  button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 100%;
+    left: 0;
+    background: rgb(20, 20, 20);
+    opacity: 0;
+    z-index: -1;
+    transition: all 0.5s;
+  }
+  button:hover {
+    color: #fff;
+  } 
+  button:hover::before {
+    left: 0;
+    right: 0;
+    opacity: 1;
+  }
+select{
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 5px;
+    height: 30px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+input{
+    background: wheat;
+    height: 30px;
+    width: 100%;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
