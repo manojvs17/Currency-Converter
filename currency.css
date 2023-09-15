@@ -119,3 +119,23 @@ input{
     font-size: 1.25rem;
     font-weight: bold;
 }
+@media screen and (max-width:600px) {
+  .outer{
+    border: 7px solid black;
+    border-radius: 50px;
+    grid-template-columns: 45% 45%;
+    grid-template-rows: 40% 40% 40%;
+    height: fit-content;
+    width: fit-content;
+}
+.section1{
+  text-shadow: -2px 1px 1px #000;
+  text-align: center;
+  font-size: 2.2em;
+}
+.section4{
+  display: block;
+  margin: 10px auto;
+  position: relative;
+}
+}
